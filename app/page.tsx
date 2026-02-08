@@ -33,6 +33,13 @@ export default function Home() {
           </p>
           <nav className="mt-6 flex gap-6">
             <Link 
+              href="/property"
+              className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1"
+              style={{ fontFamily: 'Georgia, serif' }}
+            >
+              The Apartment
+            </Link>
+            <Link 
               href="/attractions"
               className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1"
               style={{ fontFamily: 'Georgia, serif' }}
@@ -64,21 +71,44 @@ export default function Home() {
           <h2 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal mb-6">
             Your Florence Apartment
           </h2>
+          
+          {/* Address & Key Info */}
+          <div className="mb-6 p-4 rounded" style={{ backgroundColor: '#f8f8f8' }}>
+            <div className="grid md:grid-cols-2 gap-4" style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }}>
+              <div>
+                <p className="mb-2"><strong>📍 Address:</strong></p>
+                <p className="ml-6">Via Guido Monaco<br />50144 Florence, Italy</p>
+              </div>
+              <div>
+                <p className="mb-2"><strong>⭐ Rating:</strong> 9.0/10 Wonderful (21 reviews)</p>
+                <p className="mb-2"><strong>👥 Capacity:</strong> Up to 3 guests</p>
+                <p className="mb-2"><strong>📄 License:</strong> IT048017C2C2WZ8T9D</p>
+              </div>
+            </div>
+          </div>
+
           <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-lg leading-relaxed mb-4">
             Welcome to this comfortable apartment located in Florence, on Via Guido Monaco. 
-            The property is located on the second floor of a modern building with a lift.
+            The property is located on the second floor of a modern building with a lift, just 5 minutes walk from Santa Maria Novella Central Station.
           </p>
           <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-lg leading-relaxed mb-4">
             As soon as you enter, you will be greeted by a bright, modern and well-equipped kitchen/living room. 
-            The double bedroom awaits you with its welcoming comfort, ready to lull you into a restful sleep after a day of discoveries.
+            The double bedroom awaits you with its welcoming comfort, and the private terrace is perfect for morning coffee or evening wine.
           </p>
-          <div className="mt-6">
+          <div className="mt-6 flex flex-wrap gap-4">
+            <Link
+              href="/property"
+              style={{ backgroundColor: '#ae9a64', fontFamily: 'Georgia, serif' }}
+              className="inline-block text-white px-8 py-3 rounded font-normal hover:opacity-90 transition"
+            >
+              View Full Details & Map
+            </Link>
             <a 
               href="https://www.homesinflorence.it/guido-monaco-florence"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ backgroundColor: '#ae9a64', fontFamily: 'Georgia, serif' }}
-              className="inline-block text-white px-8 py-3 rounded font-normal hover:opacity-90 transition"
+              style={{ borderColor: '#ae9a64', color: '#ae9a64', fontFamily: 'Georgia, serif' }}
+              className="inline-block border-2 px-8 py-3 rounded font-normal hover:opacity-90 transition"
             >
               Check Availability & Book
             </a>
