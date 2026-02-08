@@ -4,8 +4,29 @@ import matter from 'gray-matter'
 import Link from 'next/link'
 import Image from 'next/image'
 import { MapPin, Star, Users, FileText, Instagram } from 'lucide-react'
+import ImageCarousel from './components/ImageCarousel'
 
 export default function Home() {
+  const apartmentImages = [
+    '/images/guido-monaco-01.jpg',
+    '/images/guido-monaco-02.jpg',
+    '/images/guido-monaco-03.jpg',
+    '/images/guido-monaco-04.jpg',
+    '/images/guido-monaco-05.jpg',
+    '/images/guido-monaco-06.jpg',
+    '/images/guido-monaco-07.jpg',
+    '/images/guido-monaco-08.jpg',
+    '/images/guido-monaco-09.jpg',
+    '/images/guido-monaco-10.jpg',
+    '/images/guido-monaco-11.jpg',
+    '/images/guido-monaco-12.jpg',
+    '/images/guido-monaco-13.jpg',
+    '/images/guido-monaco-14.jpg',
+    '/images/guido-monaco-15.jpg',
+    '/images/guido-monaco-16.jpg',
+    '/images/guido-monaco-17.jpg',
+  ]
+  
   const contentDir = path.join(process.cwd(), 'content')
   const files = fs.readdirSync(contentDir)
   
@@ -49,29 +70,29 @@ export default function Home() {
           <nav className="mt-6 flex flex-wrap gap-6">
             <Link 
               href="/property"
-              className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1"
-              style={{ fontFamily: 'Georgia, serif' }}
+              className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1 no-underline"
+              style={{ fontFamily: 'Georgia, serif', textDecoration: 'none' }}
             >
               The Apartment
             </Link>
             <Link 
               href="/attractions"
-              className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1"
-              style={{ fontFamily: 'Georgia, serif' }}
+              className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1 no-underline"
+              style={{ fontFamily: 'Georgia, serif', textDecoration: 'none' }}
             >
               Attractions
             </Link>
             <Link 
               href="/events"
-              className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1"
-              style={{ fontFamily: 'Georgia, serif' }}
+              className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1 no-underline"
+              style={{ fontFamily: 'Georgia, serif', textDecoration: 'none' }}
             >
               Events
             </Link>
             <Link 
               href="/best-time"
-              className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1"
-              style={{ fontFamily: 'Georgia, serif' }}
+              className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1 no-underline"
+              style={{ fontFamily: 'Georgia, serif', textDecoration: 'none' }}
             >
               Best Time to Visit
             </Link>
@@ -79,18 +100,10 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Image Gallery */}
+      {/* Hero Image Gallery - Auto-scrolling Carousel */}
       <div className="container mx-auto px-4 max-w-5xl -mt-8">
         <div className="bg-white rounded shadow-lg overflow-hidden">
-          <div className="relative h-96">
-            <Image
-              src="/images/guido-monaco-01.jpg"
-              alt="Guido Monaco Florence Apartment"
-              fill
-              style={{ objectFit: 'cover' }}
-              priority
-            />
-          </div>
+          <ImageCarousel images={apartmentImages} interval={4000} />
         </div>
       </div>
 

@@ -49,6 +49,10 @@ a {
 
 a:hover {
   color: #3d7a58;
+}
+
+/* Only underline content links, not nav links */
+.prose a:hover {
   text-decoration: underline;
 }
 
