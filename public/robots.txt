@@ -1,0 +1,32 @@
+# robots.txt for florence-blog.vercel.app
+
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /_next/
+
+# Sitemap
+Sitemap: https://florence-blog.vercel.app/sitemap.xml
+
+# Major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block AI scrapers (optional - remove if you want AI to use your content)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
