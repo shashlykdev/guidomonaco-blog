@@ -123,7 +123,7 @@ const events = [
 
 export default function EventsPage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#e8f7ee' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F8F8F8' }}>
       <header 
         style={{ 
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1691319683514-7f0ec295151f?q=80&w=1742)',

@@ -144,7 +144,7 @@ const monthByMonth = [
 
 export default function BestTimePage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#e8f7ee' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F8F8F8' }}>
       <header 
         style={{ 
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1691319683514-7f0ec295151f?q=80&w=1742)',
@@ -211,7 +211,7 @@ export default function BestTimePage() {
 
                 {/* Weather, Crowds, Prices */}
                 <div className="grid md:grid-cols-3 gap-4 mb-4">
-                  <div style={{ backgroundColor: '#e8f7ee' }} className="p-3 rounded">
+                  <div style={{ backgroundColor: '#F8F8F8' }} className="p-3 rounded">
                     <div className="flex items-center gap-2 mb-2">
                       <Sun className="w-4 h-4" style={{ color: '#4d9a6e' }} />
                       <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">Weather</span>
@@ -223,7 +223,7 @@ export default function BestTimePage() {
                       {season.weather.conditions}
                     </p>
                   </div>
-                  <div style={{ backgroundColor: '#e8f7ee' }} className="p-3 rounded">
+                  <div style={{ backgroundColor: '#F8F8F8' }} className="p-3 rounded">
                     <div className="flex items-center gap-2 mb-2">
                       <Users className="w-4 h-4" style={{ color: '#4d9a6e' }} />
                       <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">Crowds</span>
@@ -232,7 +232,7 @@ export default function BestTimePage() {
                       {season.crowds}
                     </p>
                   </div>
-                  <div style={{ backgroundColor: '#e8f7ee' }} className="p-3 rounded">
+                  <div style={{ backgroundColor: '#F8F8F8' }} className="p-3 rounded">
                     <div className="flex items-center gap-2 mb-2">
                       <Euro className="w-4 h-4" style={{ color: '#4d9a6e' }} />
                       <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">Prices</span>
@@ -274,7 +274,7 @@ export default function BestTimePage() {
                 </div>
 
                 {/* Tip */}
-                <div style={{ backgroundColor: '#e8f7ee' }} className="p-3 rounded flex items-start gap-2">
+                <div style={{ backgroundColor: '#F8F8F8' }} className="p-3 rounded flex items-start gap-2">
                   <Lightbulb className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: '#4d9a6e' }} />
                   <div>
                     <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">
@@ -299,7 +299,7 @@ export default function BestTimePage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr style={{ backgroundColor: '#e8f7ee' }}>
+                <tr style={{ backgroundColor: '#F8F8F8' }}>
                   <th style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-left p-3">Month</th>
                   <th style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-left p-3">Temp</th>
                   <th style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-left p-3">Rain</th>
@@ -309,7 +309,7 @@ export default function BestTimePage() {
               </thead>
               <tbody>
                 {monthByMonth.map((month, idx) => (
-                  <tr key={idx} className="border-b" style={{ borderColor: '#e8f7ee' }}>
+                  <tr key={idx} className="border-b" style={{ borderColor: '#F8F8F8' }}>
                     <td style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="p-3 font-semibold">{month.month}</td>
                     <td style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="p-3">{month.temp}</td>
                     <td style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="p-3">{month.rain}</td>

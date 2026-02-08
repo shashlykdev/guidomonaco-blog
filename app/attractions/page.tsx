@@ -248,7 +248,7 @@ const attractions = [
 
 export default function AttractionsPage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#e8f7ee' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F8F8F8' }}>
       <header 
         style={{ 
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1691319683514-7f0ec295151f?q=80&w=1742)',
@@ -374,7 +374,7 @@ export default function AttractionsPage() {
                       </div>
                     </div>
                     
-                    <div style={{ backgroundColor: '#e8f7ee' }} className="p-3 rounded flex items-start gap-2">
+                    <div style={{ backgroundColor: '#F8F8F8' }} className="p-3 rounded flex items-start gap-2">
                       <Lightbulb className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: '#4d9a6e' }} />
                       <div>
                         <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">

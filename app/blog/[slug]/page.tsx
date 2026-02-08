@@ -43,7 +43,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
   })
   
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#e8f7ee' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F8F8F8' }}>
       <head>
         <script
           type="application/ld+json"

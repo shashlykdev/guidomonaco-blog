@@ -23,7 +23,7 @@ export default function Home() {
   })
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#e8f7ee' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F8F8F8' }}>
       <header 
         style={{ 
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1691319683514-7f0ec295151f?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
@@ -95,7 +95,7 @@ export default function Home() {
           </h2>
           
           {/* Address & Key Info */}
-          <div className="mb-6 p-4 rounded" style={{ backgroundColor: '#e8f7ee' }}>
+          <div className="mb-6 p-4 rounded" style={{ backgroundColor: '#F8F8F8' }}>
             <div className="grid md:grid-cols-2 gap-4" style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }}>
               <div>
                 <p className="mb-2 flex items-center gap-2">
