@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
+import { blogPostSchema } from '@/lib/schema'
 
 export async function generateStaticParams() {
   const contentDir = path.join(process.cwd(), 'content')
@@ -32,8 +33,24 @@ async function getPost(slug: string) {
 export default async function BlogPost({ params }: { params: { slug: string } }) {
   const { data, contentHtml } = await getPost(params.slug)
   
+  const schema = blogPostSchema({
+    title: data.title,
+    description: data.description,
+    date: data.date,
+    author: data.author || 'Guido Monaco Team',
+    url: `https://florence-blog.vercel.app/blog/${params.slug}`,
+  })
+  
   return (
     <div className="min-h-screen bg-white">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schema),
+          }}
+        />
+      </head>
       <header className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white py-8">
         <div className="container mx-auto px-4">
           <a href="/" className="text-white hover:underline">← Back to Home</a>
