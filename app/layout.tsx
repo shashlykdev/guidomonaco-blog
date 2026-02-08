@@ -40,6 +40,13 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="lFyN_uXWzydo2859Mft1cwDhOz8XW484JTfjr65yrw8" />
+        {/* Usercentrics Consent Management Platform */}
+        <script
+          id="usercentrics-cmp"
+          src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
+          data-settings-id="cg-D9sMk9tlnGQ"
+          async
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
