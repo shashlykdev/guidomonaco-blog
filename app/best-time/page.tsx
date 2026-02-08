@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const seasons = [
   {
     season: 'Spring (March-May)',
-    image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800',
+    image: 'https://images.unsplash.com/photo-1764215602287-e0f3bcaa4f38?q=80&w=774',
     summary: 'Ideal weather, blooming gardens, moderate crowds',
     icon: <Sun className="w-12 h-12" />,
     weather: {
@@ -40,7 +40,7 @@ const seasons = [
   },
   {
     season: 'Summer (June-August)',
-    image: 'https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=800',
+    image: 'https://images.unsplash.com/photo-1616444416144-700a2c4ee8d3?q=80&w=870',
     summary: 'Hot weather, peak crowds, long daylight, major festivals',
     icon: <Sun className="w-12 h-12" />,
     weather: {
@@ -69,7 +69,7 @@ const seasons = [
   },
   {
     season: 'Fall (September-November)',
-    image: 'https://images.unsplash.com/photo-1540202404-d0c7fe46a087?w=800',
+    image: 'https://images.unsplash.com/photo-1763496832556-00a938a2a1c2?q=80&w=1744',
     summary: 'Comfortable weather, harvest season, cultural events, thinning crowds',
     icon: <Cloud className="w-12 h-12" />,
     weather: {
@@ -98,7 +98,7 @@ const seasons = [
   },
   {
     season: 'Winter (December-February)',
-    image: 'https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=800',
+    image: 'https://images.unsplash.com/photo-1512840399005-5bce2b583140?q=80&w=1746',
     summary: 'Cold but magical, Christmas markets, fewest crowds, lowest prices',
     icon: <Snowflake className="w-12 h-12" />,
     weather: {
