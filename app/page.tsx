@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import Link from 'next/link'
 import Image from 'next/image'
+import { MapPin, Star, Users, FileText, Instagram } from 'lucide-react'
 
 export default function Home() {
   const contentDir = path.join(process.cwd(), 'content')
@@ -83,13 +84,25 @@ export default function Home() {
           <div className="mb-6 p-4 rounded" style={{ backgroundColor: '#f8f8f8' }}>
             <div className="grid md:grid-cols-2 gap-4" style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }}>
               <div>
-                <p className="mb-2"><strong>📍 Address:</strong></p>
+                <p className="mb-2 flex items-center gap-2">
+                  <MapPin size={18} style={{ color: '#ae9a64' }} />
+                  <strong>Address:</strong>
+                </p>
                 <p className="ml-6">Via Guido Monaco<br />50144 Florence, Italy</p>
               </div>
               <div>
-                <p className="mb-2"><strong>⭐ Rating:</strong> 9.0/10 Wonderful (21 reviews)</p>
-                <p className="mb-2"><strong>👥 Capacity:</strong> Up to 3 guests</p>
-                <p className="mb-2"><strong>📄 License:</strong> IT048017C2C2WZ8T9D</p>
+                <p className="mb-2 flex items-center gap-2">
+                  <Star size={18} style={{ color: '#ae9a64' }} className="fill-current" />
+                  <strong>Rating:</strong> 9.0/10 Wonderful (21 reviews)
+                </p>
+                <p className="mb-2 flex items-center gap-2">
+                  <Users size={18} style={{ color: '#ae9a64' }} />
+                  <strong>Capacity:</strong> Up to 3 guests
+                </p>
+                <p className="mb-2 flex items-center gap-2">
+                  <FileText size={18} style={{ color: '#ae9a64' }} />
+                  <strong>License:</strong> IT048017C2C2WZ8T9D
+                </p>
               </div>
             </div>
           </div>
@@ -184,8 +197,9 @@ export default function Home() {
               target="_blank" 
               rel="noopener noreferrer" 
               style={{ color: '#ae9a64' }}
-              className="hover:opacity-75"
+              className="hover:opacity-75 inline-flex items-center gap-2"
             >
+              <Instagram size={18} />
               Follow us on Instagram
             </a>
           </p>
