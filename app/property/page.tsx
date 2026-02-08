@@ -347,10 +347,6 @@ export default function PropertyPage() {
                 </a>
               </div>
 
-              <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-sm text-center opacity-75 mb-4">
-                Managed by Homes in Florence
-              </p>
-
               {/* Instagram Link */}
               <a
                 href="https://www.instagram.com/guidomonacobnb"
@@ -386,10 +382,7 @@ export default function PropertyPage() {
       <footer style={{ backgroundColor: '#333' }} className="text-white py-8 mt-12">
         <div className="container mx-auto px-4 text-center max-w-5xl">
           <p style={{ fontFamily: 'Georgia, serif' }} className="opacity-90">
-            © 2026 Guido Monaco Florence. Managed by{' '}
-            <a href="https://www.homesinflorence.it" target="_blank" rel="noopener noreferrer" className="hover:opacity-75">
-              Homes in Florence
-            </a>
+            © 2026 Guido Monaco Florence
           </p>
           <p className="mt-3" style={{ fontFamily: 'Georgia, serif' }}>
             <a 
