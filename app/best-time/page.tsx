@@ -1,125 +1,145 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { Sun, Cloud, CloudRain, Snowflake, Users, Euro, Lightbulb, Calendar } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Best Time to Visit Florence - Complete Seasonal Guide | Guido Monaco',
-  description: 'Complete guide to visiting Florence by season. Weather, crowds, events, and insider tips for planning your perfect Florence trip year-round.',
-  keywords: 'best time visit Florence, Florence weather, Florence by season, when to visit Florence, Florence crowds, Florence events',
+  description: 'Comprehensive guide to visiting Florence by season. Weather, crowds, prices, and insider tips for spring, summer, fall, and winter travel.',
+  keywords: 'best time visit Florence, Florence weather, Florence seasons, when to visit Florence, Florence spring summer fall winter',
 }
 
 const seasons = [
   {
-    season: 'Spring (March - May)',
-    weather: '10-23°C (50-73°F)',
-    crowds: 'Moderate to High',
-    bestFor: 'Pleasant weather, blooming gardens, cultural events',
-    description: "Spring is considered by many the best time to visit Florence, offering mild temperatures, blooming flowers, and that perfect balance before summer crowds arrive. March starts cool and rainy but by April, the weather turns delightful with temperatures in the high teens Celsius. This is when Florence's gardens come alive - wisteria drapes Bardini Gardens in purple cascades, iris bloom across the city (Florence's symbol), and roses perfume the Boboli Gardens. Easter brings the spectacular Scoppio del Carro tradition with its explosive cart and mechanical dove. The days grow longer, perfect for evening passeggiata (strolls) along the Arno. May is particularly lovely with warm days ideal for outdoor dining and fewer crowds than summer, though American and European spring breakers do visit. The Maggio Musicale Fiorentino music festival fills venues with world-class opera and classical music. Restaurant terraces open, gelato season begins in earnest, and locals shed winter coats to enjoy outdoor cafés. This season offers the best photography light - soft morning sun illuminating Renaissance architecture without the harsh summer glare. Book accommodations early as spring's popularity means hotels fill quickly, especially during Easter week.",
-    events: [
-      'Scoppio del Carro (Easter)',
-      'Maggio Musicale Fiorentino (April-June)',
-      'Feast of the Annunciation (March 25)',
+    season: 'Spring (March-May)',
+    image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800',
+    summary: 'Ideal weather, blooming gardens, moderate crowds',
+    icon: <Sun className="w-12 h-12" />,
+    weather: {
+      temperature: '12-22°C (54-72°F)',
+      conditions: 'Mild, occasional rain, increasing sunshine',
+      clothing: 'Layers, light jacket, umbrella for April showers',
+    },
+    crowds: 'Moderate - increasing from March to May, peak around Easter',
+    prices: 'Medium-High - especially during Easter week',
+    highlights: [
+      'Perfect walking weather without summer heat',
+      'Gardens and parks burst into bloom (wisteria in late April)',
+      'Scoppio del Carro at Easter (March/April)',
+      'Maggio Musicale Festival begins (late April)',
+      'Outdoor cafés open, terraces come alive',
+      'Flower market at Piazza della Repubblica',
     ],
-    pros: [
-      'Perfect weather for walking and sightseeing',
-      'Blooming gardens and flowers throughout the city',
-      'Major cultural festival (Maggio Musicale)',
-      'Longer daylight hours',
-      'Shoulder season pricing on some accommodations',
+    considerations: [
+      'Book accommodation well ahead for Easter week',
+      'April can be rainy - pack waterproof layers',
+      'Popular with European tourists during spring holidays',
+      'Some outdoor attractions may have reduced hours in March',
     ],
-    cons: [
-      'Easter week brings significant crowds',
-      'Occasional rain showers',
-      'Prices rising as summer approaches',
-      'Some museums start getting crowded',
-    ],
-    tips: "Book well in advance, especially for Easter week. Bring layers as temperatures vary between morning and evening. Visit gardens specifically in late April/early May for wisteria and flowers. Restaurant reservations recommended for popular spots.",
+    tip: 'Late April to mid-May offers the best balance: warm weather, blooming wisteria, and not yet peak crowds. Perfect for exploring gardens like Bardini and Boboli.',
   },
   {
-    season: 'Summer (June - August)',
-    weather: '20-35°C (68-95°F)',
-    crowds: 'Very High',
-    bestFor: 'Outdoor events, aperitivo culture, long days',
-    description: "Summer is Florence's peak tourist season, bringing sweltering heat, massive crowds, and the city's most vibrant street life. June marks the beginning of outdoor season with Calcio Storico matches creating electric atmosphere in Piazza Santa Croce. The brutal medieval football tournament showcases Florentine pride as historic neighborhoods battle in costume. San Giovanni's feast day (June 24th) culminates in spectacular fireworks over the Arno visible from Piazzale Michelangelo. July and August are intensely hot with temperatures often exceeding 35°C (95°F) and high humidity making midday exploration uncomfortable. However, summer offers unique experiences: evening passeggiata culture peaks as locals emerge after dark, restaurants move seating to outdoor terraces, and rooftop bars offer sunset aperitivo with panoramic views. Museums stay open later (some until 22:00), allowing you to sightsee during cooler evening hours. Many Florentines leave the city in August for Ferragosto holidays, so some restaurants and shops close, but this also means slightly fewer crowds at major attractions. The Arno's water levels drop dramatically, exposing rocky shores where locals picnic. Summer festivals include outdoor cinema screenings in Piazza Santissima Annunziata and concerts in historic courtyards.",
-    events: [
-      'Calcio Storico Fiorentino (mid-June)',
-      'Festa di San Giovanni with fireworks (June 24)',
-      'Estate Fiesolana festival (June-August)',
-      'Outdoor cinema and concerts',
+    season: 'Summer (June-August)',
+    image: 'https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=800',
+    summary: 'Hot weather, peak crowds, long daylight, major festivals',
+    icon: <Sun className="w-12 h-12" />,
+    weather: {
+      temperature: '20-35°C (68-95°F), often exceeding 35°C in July/August',
+      conditions: 'Hot, dry, intense sun, occasional thunderstorms',
+      clothing: 'Light, breathable fabrics, sun hat, sunscreen essential',
+    },
+    crowds: 'Very Heavy - peak tourist season, long museum queues',
+    prices: 'Highest - premium rates for everything',
+    highlights: [
+      'Calcio Storico matches in June (must-see spectacle)',
+      'Festa di San Giovanni fireworks (June 24)',
+      'Extended museum hours and evening openings',
+      'Open-air cinema and concerts throughout the city',
+      'Gelato season at its finest',
+      'Daylight until 21:00+, perfect for evening strolls',
     ],
-    pros: [
-      'Longest daylight hours (until 21:00+)',
-      'Vibrant outdoor culture and street life',
-      'Major summer festivals and events',
-      'All attractions operating full hours',
-      'Perfect for aperitivo and evening dining',
+    considerations: [
+      'Oppressive heat makes midday sightseeing exhausting',
+      'Museums and churches crowded with tour groups',
+      'Many locals leave in August (Ferragosto), some restaurants close',
+      'Need to book everything months in advance',
+      'Air conditioning not universal in older hotels',
     ],
-    cons: [
-      'Extreme heat and humidity',
-      'Overwhelming tourist crowds at all major sites',
-      'Highest accommodation prices',
-      'Many locals away in August (some closures)',
-      'Air quality can be poor',
-    ],
-    tips: "Visit museums and indoor attractions during midday heat (11:00-16:00), explore outdoors early morning or evening. Stay in air-conditioned accommodation (Guido Monaco has A/C!). Drink plenty of water. Book everything in advance - restaurants, museums, tours sell out. Consider visiting nearby hilltop towns for cooler temperatures.",
+    tip: 'Visit museums early morning (8:15 opening) or late afternoon. Take a long lunch break during peak heat (13:00-17:00). Early June or late August offer slightly more comfortable temperatures while keeping summer events.',
   },
   {
-    season: 'Fall (September - November)',
-    weather: '12-25°C (54-77°F)',
-    crowds: 'Moderate to High',
-    bestFor: 'Wine harvest, truffle season, cultural events',
-    description: "Autumn transforms Florence into a golden paradise with perfect weather, wine harvest celebrations, and that magical time when summer tourists depart but pleasant temperatures remain. September still feels summer-like with warm days ideal for exploration without the punishing heat. The Festa della Rificolona lantern festival (September 7th) brings families into streets carrying traditional paper lanterns - a charming local tradition rarely seen by tourists. October is arguably Florence's finest month: temperatures cool to comfortable walking weather, fall colors emerge in Boboli and Bardini gardens, and Tuscany's grape harvest (vendemmia) fills countryside with activity. Many wineries offer harvest tours and tastings. Chestnuts appear roasted at street corners, white truffles arrive on restaurant menus, and seasonal dishes like wild boar and porcini mushrooms dominate menus. November grows cooler and rainier but offers advantages: minimal crowds at major museums, shoulder season hotel rates, and that cozy Tuscan atmosphere with fog rolling through vineyards at dawn. The Biennale dell'Antiquariato (odd years) attracts international collectors to Palazzo Corsini. This is also when Florentines return from summer holidays, bringing the city back to authentic local life. November's Florence Marathon transforms the city as thousands run past Renaissance landmarks.",
-    events: [
-      'Festa della Rificolona lantern festival (Sept 7)',
-      'Biennale Antiquariato (September, odd years)',
-      'Wine harvest festivals throughout Tuscany',
-      'Florence Marathon (last Sunday November)',
-      'White truffle season begins',
+    season: 'Fall (September-November)',
+    image: 'https://images.unsplash.com/photo-1540202404-d0c7fe46a087?w=800',
+    summary: 'Comfortable weather, harvest season, cultural events, thinning crowds',
+    icon: <Cloud className="w-12 h-12" />,
+    weather: {
+      temperature: '10-25°C (50-77°F), gradually cooling',
+      conditions: 'Pleasant in September, increasing rain in October/November',
+      clothing: 'Light layers in September, jacket by November',
+    },
+    crowds: 'Moderate - decreasing after mid-September, very manageable by November',
+    prices: 'Medium - dropping significantly in November',
+    highlights: [
+      'Festa della Rificolona lantern festival (September 7)',
+      'Biennale dell\'Antiquariato in odd years (September)',
+      'Grape harvest season - wine tours in Chianti',
+      'Truffle season begins (October-November)',
+      'Florence Marathon (late November)',
+      'Cooler weather perfect for walking tours',
+      'Fall foliage in gardens and countryside',
     ],
-    pros: [
-      'Perfect mild weather for walking',
-      'Harvest season - wine, chestnuts, mushrooms, truffles',
-      'Fewer crowds than summer',
-      'Beautiful autumn colors in gardens',
-      'Lower hotel rates than summer',
+    considerations: [
+      'October-November sees increasing rain - pack umbrella',
+      'Days shorten significantly by November',
+      'Some outdoor attractions close earlier or entirely by November',
+      'November can feel quiet and gray',
     ],
-    cons: [
-      'Increasing rain especially November',
-      'Some outdoor events wind down',
-      'Days getting shorter',
-      'Can be chilly mornings/evenings',
-    ],
-    tips: "September is ideal for perfect weather with fewer crowds. Book wine country tours for harvest experience. Pack layers and rain jacket for November. Restaurant reservations recommended as locals are back in town. Consider combining Florence with Tuscan countryside drives through changing vineyard colors.",
+    tip: 'September and early October are arguably the best times to visit: summer heat has passed, crowds thin dramatically, harvest season brings incredible food, and cultural calendar remains full. Late October adds truffle festivals.',
   },
   {
-    season: 'Winter (December - February)',
-    weather: '2-12°C (36-54°F)',
-    crowds: 'Low to Moderate',
-    bestFor: 'Museums without crowds, Christmas markets, authentic local experience',
-    description: "Winter reveals a different Florence - quieter, more authentic, and refreshingly uncrowded. December brings Christmas magic with markets in Piazza Santa Croce selling artisan crafts and seasonal treats, nativity scenes displayed in churches, and festive lights illuminating Via de' Tornabuoni's luxury shops. The holiday atmosphere feels genuinely Italian rather than tourist-oriented, with locals shopping for gifts and families gathering for seasonal meals. New Year's Eve attracts crowds to Piazzale Michelangelo for fireworks, but nothing compared to summer hordes. January and February are Florence's quietest months with the fewest tourists but also coldest, dampest weather. However, this offers unique advantages: you can walk into the Uffizi or Accademia with minimal wait, restaurants accommodate walk-ins, and you'll experience Florence as Florentines do. Museums and churches feel peaceful, allowing contemplative art appreciation without jostling crowds. Winter also brings sales season (saldi) with steep discounts at designer boutiques on Via de' Tornabuoni. Indoor activities shine: cooking classes, wine tastings, museum deep-dives, and cozy trattorie serving hearty Tuscan winter dishes like ribollita soup and bistecca alla fiorentina. The light is softer, creating beautiful photography opportunities. Pack warm clothes, good walking shoes, and embrace the season.",
-    events: [
-      'Christmas markets (all December)',
-      'New Year\'s Eve fireworks (December 31)',
-      'Epiphany celebrations (January 6)',
-      'Carnival celebrations (February)',
-      'San Valentino (Valentine\'s Day, February 14)',
+    season: 'Winter (December-February)',
+    image: 'https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=800',
+    summary: 'Cold but magical, Christmas markets, fewest crowds, lowest prices',
+    icon: <Snowflake className="w-12 h-12" />,
+    weather: {
+      temperature: '3-12°C (37-54°F), occasionally below freezing',
+      conditions: 'Cold, damp, occasional rain, rare snow',
+      clothing: 'Warm coat, scarf, gloves, waterproof boots',
+    },
+    crowds: 'Light - except Christmas/New Year week',
+    prices: 'Lowest - significant deals on accommodation (except holidays)',
+    highlights: [
+      'Christmas markets in Piazza Santa Croce (all December)',
+      'Festive decorations and lights throughout city',
+      'Pitti Uomo Fashion Week (January)',
+      'Empty museums - walk into Uffizi without advance booking',
+      'Genuine local atmosphere without tourist hordes',
+      'Cozy trattorias and winter comfort food',
+      'Chinese New Year celebrations in Florence\'s Chinatown',
     ],
-    pros: [
-      'Lowest tourist crowds all year',
-      'No lines at major attractions',
-      'Lowest hotel and flight prices',
-      'Authentic local experience',
-      'Christmas markets and holiday atmosphere',
-      'Hearty seasonal Tuscan cuisine',
-    ],
-    cons: [
-      'Cold and often damp weather',
-      'Short daylight hours (dark by 17:00)',
+    considerations: [
+      'Cold, damp weather can be uncomfortable for extended walking',
       'Some attractions have reduced hours',
-      'Outdoor dining limited or closed',
-      'Can be rainy',
+      'Many restaurants close for vacation in January/February',
+      'Short daylight hours (sunset around 17:00)',
+      'Churches can be extremely cold inside',
     ],
-    tips: "Book accommodation with heating (Guido Monaco has heating!). January-February offer lowest prices and smallest crowds - ideal for serious museum lovers. Layer clothing for cold mornings and indoor heating. Many restaurants close for holidays in late December/early January, so research ahead. Embrace cozy indoor activities - cooking classes, wine tastings, spa treatments.",
+    tip: 'December combines festive atmosphere with manageable crowds (except Christmas week). January-February offer rock-bottom prices and empty museums - perfect for serious art lovers who don\'t mind cold. Book a place with good heating!',
   },
+]
+
+const monthByMonth = [
+  { month: 'January', temp: '3-10°C', rain: 'Medium', crowds: 'Low', highlight: 'Pitti Uomo, lowest prices, empty museums' },
+  { month: 'February', temp: '3-12°C', rain: 'Medium', crowds: 'Low', highlight: 'Carnival celebrations, Valentine\'s romance' },
+  { month: 'March', temp: '6-16°C', rain: 'Medium', crowds: 'Increasing', highlight: 'Spring awakening, Unità d\'Italia (17th)' },
+  { month: 'April', temp: '9-19°C', rain: 'High', crowds: 'Medium-High', highlight: 'Easter Scoppio del Carro, wisteria blooms' },
+  { month: 'May', temp: '13-23°C', rain: 'Medium', crowds: 'Medium-High', highlight: 'Maggio Musicale, perfect weather' },
+  { month: 'June', temp: '17-28°C', rain: 'Low', crowds: 'High', highlight: 'Calcio Storico, San Giovanni (24th)' },
+  { month: 'July', temp: '20-33°C', rain: 'Very Low', crowds: 'Very High', highlight: 'Long daylight, outdoor concerts' },
+  { month: 'August', temp: '20-35°C', rain: 'Very Low', crowds: 'Very High', highlight: 'Ferragosto (15th), locals on holiday' },
+  { month: 'September', temp: '16-27°C', rain: 'Medium', crowds: 'Medium', highlight: 'Rificolona (7th), harvest season' },
+  { month: 'October', temp: '12-22°C', rain: 'High', crowds: 'Low-Medium', highlight: 'Truffle season, autumn colors' },
+  { month: 'November', temp: '7-15°C', rain: 'High', crowds: 'Low', highlight: 'Florence Marathon, lower prices' },
+  { month: 'December', temp: '3-11°C', rain: 'Medium', crowds: 'Medium (holidays)', highlight: 'Christmas markets, festive lights' },
 ]
 
 export default function BestTimePage() {
@@ -127,7 +147,7 @@ export default function BestTimePage() {
     <div className="min-h-screen" style={{ backgroundColor: '#e8f7ee' }}>
       <header 
         style={{ 
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1691319683514-7f0ec295151f?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1691319683514-7f0ec295151f?q=80&w=1742)',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }} 
@@ -141,7 +161,7 @@ export default function BestTimePage() {
             Best Time to Visit Florence
           </h1>
           <p className="text-xl mt-3 text-white opacity-95" style={{ fontFamily: 'Georgia, serif' }}>
-            Complete seasonal guide for planning your perfect trip
+            Complete seasonal guide to planning your perfect trip
           </p>
         </div>
       </header>
@@ -150,136 +170,169 @@ export default function BestTimePage() {
         {/* Intro */}
         <div className="bg-white rounded shadow-sm p-8 mb-8">
           <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-lg leading-relaxed mb-4">
-            Florence is beautiful year-round, but each season offers distinct experiences. Your ideal time depends on 
-            priorities: weather, crowds, events, prices, and the type of experience you seek. This guide helps you 
-            choose the perfect season for your Florentine adventure.
+            Florence shines year-round, but each season offers distinct advantages. Your ideal visit depends on priorities: 
+            weather comfort, crowd tolerance, budget flexibility, and specific events.
           </p>
-          <div className="mt-6 p-4 rounded" style={{ backgroundColor: '#e8f7ee' }}>
-            <p style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold mb-2">Quick Answer:</p>
-            <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }}>
-              <strong>April-May and September-October</strong> offer the best combination of pleasant weather, 
-              manageable crowds, and cultural events. For lowest prices and smallest crowds, choose 
-              <strong> January-February</strong>. Avoid <strong>July-August</strong> unless you love heat and crowds.
-            </p>
-          </div>
+          <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-lg leading-relaxed">
+            <strong>Quick answer:</strong> Late April to early May and September to mid-October offer the best balance. 
+            But every season has magic worth experiencing.
+          </p>
         </div>
 
         {/* Seasons */}
-        <div className="space-y-8">
+        <div className="space-y-8 mb-12">
           {seasons.map((season, idx) => (
-            <div key={idx} className="bg-white rounded shadow-sm p-8">
-              <h2 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal mb-6">
-                {season.season}
-              </h2>
-
-              {/* Quick Stats */}
-              <div className="grid md:grid-cols-3 gap-4 mb-6 p-4 rounded" style={{ backgroundColor: '#e8f7ee' }}>
-                <div>
-                  <p style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-1">
-                    Weather
-                  </p>
-                  <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-base">
-                    {season.weather}
-                  </p>
+            <div key={idx} style={{ backgroundColor: '#F8F8F8' }} className="rounded shadow-sm overflow-hidden">
+              {/* Image */}
+              {season.image && (
+                <div className="relative h-64 w-full">
+                  <img 
+                    src={season.image} 
+                    alt={season.season}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <div>
-                  <p style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-1">
-                    Crowds
-                  </p>
-                  <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-base">
-                    {season.crowds}
-                  </p>
+              )}
+              
+              <div className="p-6">
+                <div className="flex items-center gap-4 mb-3">
+                  <div style={{ color: '#4d9a6e' }}>
+                    {season.icon}
+                  </div>
+                  <div>
+                    <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal">
+                      {season.season}
+                    </h3>
+                    <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-sm opacity-80">
+                      {season.summary}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-1">
-                    Best For
-                  </p>
-                  <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-base">
-                    {season.bestFor}
-                  </p>
+
+                {/* Weather, Crowds, Prices */}
+                <div className="grid md:grid-cols-3 gap-4 mb-4">
+                  <div style={{ backgroundColor: '#e8f7ee' }} className="p-3 rounded">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Sun className="w-4 h-4" style={{ color: '#4d9a6e' }} />
+                      <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">Weather</span>
+                    </div>
+                    <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-xs">
+                      {season.weather.temperature}
+                    </p>
+                    <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-xs">
+                      {season.weather.conditions}
+                    </p>
+                  </div>
+                  <div style={{ backgroundColor: '#e8f7ee' }} className="p-3 rounded">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Users className="w-4 h-4" style={{ color: '#4d9a6e' }} />
+                      <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">Crowds</span>
+                    </div>
+                    <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-xs">
+                      {season.crowds}
+                    </p>
+                  </div>
+                  <div style={{ backgroundColor: '#e8f7ee' }} className="p-3 rounded">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Euro className="w-4 h-4" style={{ color: '#4d9a6e' }} />
+                      <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">Prices</span>
+                    </div>
+                    <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-xs">
+                      {season.prices}
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              {/* Description */}
-              <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-base leading-relaxed mb-6">
-                {season.description}
-              </p>
-
-              {/* Events */}
-              <div className="mb-6">
-                <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-3">
-                  Major Events
-                </h3>
-                <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-2">
-                  {season.events.map((event, eventIdx) => (
-                    <li key={eventIdx} className="text-base">• {event}</li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Pros & Cons */}
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-3">
-                    Pros
-                  </h3>
-                  <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-2">
-                    {season.pros.map((pro, proIdx) => (
-                      <li key={proIdx} className="text-base">✓ {pro}</li>
+                {/* Highlights */}
+                <div className="mb-4">
+                  <h4 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-2">
+                    Highlights:
+                  </h4>
+                  <ul className="space-y-1">
+                    {season.highlights.map((highlight, hIdx) => (
+                      <li key={hIdx} style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-sm flex items-start gap-2">
+                        <span style={{ color: '#4d9a6e' }}>•</span>
+                        {highlight}
+                      </li>
                     ))}
                   </ul>
                 </div>
-                <div>
-                  <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-3">
-                    Cons
-                  </h3>
-                  <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-2">
-                    {season.cons.map((con, conIdx) => (
-                      <li key={conIdx} className="text-base">✗ {con}</li>
+
+                {/* Considerations */}
+                <div className="mb-4">
+                  <h4 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-2">
+                    Things to Consider:
+                  </h4>
+                  <ul className="space-y-1">
+                    {season.considerations.map((consideration, cIdx) => (
+                      <li key={cIdx} style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-sm flex items-start gap-2">
+                        <span style={{ color: '#4d9a6e' }}>•</span>
+                        {consideration}
+                      </li>
                     ))}
                   </ul>
                 </div>
-              </div>
 
-              {/* Tips */}
-              <div className="p-4 rounded" style={{ backgroundColor: '#e8f7ee' }}>
-                <p style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-2">
-                  💡 Insider Tips
-                </p>
-                <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-base">
-                  {season.tips}
-                </p>
+                {/* Tip */}
+                <div style={{ backgroundColor: '#e8f7ee' }} className="p-3 rounded flex items-start gap-2">
+                  <Lightbulb className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: '#4d9a6e' }} />
+                  <div>
+                    <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">
+                      Insider Tip:
+                    </span>
+                    <span style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-sm ml-2">
+                      {season.tip}
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Additional Tips */}
-        <div className="bg-white rounded shadow-sm p-8 mt-12">
-          <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
-            General Tips for Any Season
-          </h3>
-          <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-3 text-base">
-            <li>• <strong>Book Guido Monaco early:</strong> Our apartment books months in advance during peak seasons</li>
-            <li>• <strong>Museum tickets:</strong> Always pre-book Uffizi and Accademia, regardless of season</li>
-            <li>• <strong>Dress code:</strong> Churches enforce covered shoulders/knees year-round - bring a scarf</li>
-            <li>• <strong>Siesta time:</strong> Many shops close 13:00-15:30, plan accordingly</li>
-            <li>• <strong>Monday closures:</strong> Major museums closed Mondays (Uffizi, Accademia, Pitti)</li>
-            <li>• <strong>Stay central:</strong> Via Guido Monaco puts you 5 minutes from the station, walking distance to everything</li>
-          </ul>
+        {/* Month-by-Month Quick Reference */}
+        <div className="bg-white rounded shadow-sm p-8 mb-8">
+          <h2 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal mb-6 flex items-center gap-3">
+            <Calendar className="w-8 h-8" />
+            Month-by-Month Quick Reference
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr style={{ backgroundColor: '#e8f7ee' }}>
+                  <th style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-left p-3">Month</th>
+                  <th style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-left p-3">Temp</th>
+                  <th style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-left p-3">Rain</th>
+                  <th style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-left p-3">Crowds</th>
+                  <th style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-left p-3">Key Highlight</th>
+                </tr>
+              </thead>
+              <tbody>
+                {monthByMonth.map((month, idx) => (
+                  <tr key={idx} className="border-b" style={{ borderColor: '#e8f7ee' }}>
+                    <td style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="p-3 font-semibold">{month.month}</td>
+                    <td style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="p-3">{month.temp}</td>
+                    <td style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="p-3">{month.rain}</td>
+                    <td style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="p-3">{month.crowds}</td>
+                    <td style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="p-3">{month.highlight}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* CTA */}
-        <div className="bg-white rounded shadow-sm p-8 mt-8">
+        <div className="bg-white rounded shadow-sm p-8">
           <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-4">
-            Ready to Experience Florence?
+            Book Your Perfect Season at Guido Monaco
           </h3>
           <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="mb-4 text-lg leading-relaxed">
-            Guido Monaco apartment offers comfort and convenience year-round with air conditioning for summer, 
-            heating for winter, and a perfect location just 5 minutes from Santa Maria Novella station.
+            Whatever season you choose, Guido Monaco apartment provides modern comfort with heating for winter, 
+            fans for summer, and the perfect central location year-round.
           </p>
           <a 
-            href="https://www.homesinflorence.it/guido-monaco-florence"
+            href="https://www.booking.com/Share-3c371d"
             target="_blank"
             rel="noopener noreferrer"
             style={{ backgroundColor: '#4d9a6e', fontFamily: 'Georgia, serif' }}
