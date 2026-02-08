@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function PropertyPage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#f8f8f8' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#e8f7ee' }}>
       <header 
         style={{ 
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1691319683514-7f0ec295151f?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
@@ -56,12 +56,12 @@ export default function PropertyPage() {
           <div className="lg:col-span-2 space-y-8">
             {/* Title & Address */}
             <div className="bg-white rounded shadow-sm p-8">
-              <h1 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-4xl font-normal mb-4">
+              <h1 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-4xl font-normal mb-4">
                 Guido Monaco Apartment
               </h1>
               <div style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-lg space-y-2">
                 <p className="flex items-start gap-2">
-                  <MapPin className="mt-1" style={{ color: '#ae9a64' }} size={20} />
+                  <MapPin className="mt-1" style={{ color: '#4d9a6e' }} size={20} />
                   <span>
                     <strong>Via Guido Monaco</strong><br />
                     50144 Florence, Italy
@@ -71,7 +71,7 @@ export default function PropertyPage() {
               </div>
               
               {/* Rating Badge */}
-              <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded" style={{ backgroundColor: '#ae9a64' }}>
+              <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded" style={{ backgroundColor: '#4d9a6e' }}>
                 <Star className="fill-white text-white" size={20} />
                 <span className="text-white font-semibold" style={{ fontFamily: 'Georgia, serif' }}>9.0</span>
                 <span className="text-white" style={{ fontFamily: 'Georgia, serif' }}>Wonderful</span>
@@ -81,7 +81,7 @@ export default function PropertyPage() {
 
             {/* Description */}
             <div className="bg-white rounded shadow-sm p-8">
-              <h2 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-4">
+              <h2 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-4">
                 About This Apartment
               </h2>
               <div style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-lg leading-relaxed space-y-4">
@@ -110,12 +110,12 @@ export default function PropertyPage() {
 
             {/* Amenities */}
             <div className="bg-white rounded shadow-sm p-8">
-              <h2 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
+              <h2 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
                 Amenities
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold mb-3 flex items-center gap-2">
+                  <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold mb-3 flex items-center gap-2">
                     <Home size={20} /> Property Features
                   </h3>
                   <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-2">
@@ -127,7 +127,7 @@ export default function PropertyPage() {
                   </ul>
                 </div>
                 <div>
-                  <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold mb-3 flex items-center gap-2">
+                  <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold mb-3 flex items-center gap-2">
                     <Thermometer size={20} /> Comfort
                   </h3>
                   <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-2">
@@ -138,7 +138,7 @@ export default function PropertyPage() {
                   </ul>
                 </div>
                 <div>
-                  <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold mb-3 flex items-center gap-2">
+                  <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold mb-3 flex items-center gap-2">
                     <Utensils size={20} /> Kitchen
                   </h3>
                   <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-2">
@@ -150,7 +150,7 @@ export default function PropertyPage() {
                   </ul>
                 </div>
                 <div>
-                  <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold mb-3 flex items-center gap-2">
+                  <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold mb-3 flex items-center gap-2">
                     <Wifi size={20} /> Technology
                   </h3>
                   <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-2">
@@ -164,35 +164,35 @@ export default function PropertyPage() {
 
             {/* House Rules */}
             <div className="bg-white rounded shadow-sm p-8">
-              <h2 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
+              <h2 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
                 House Rules
               </h2>
               <div className="grid md:grid-cols-2 gap-6" style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }}>
                 <div className="space-y-3">
                   <p className="flex items-center gap-2">
-                    <Clock size={18} style={{ color: '#ae9a64' }} />
+                    <Clock size={18} style={{ color: '#4d9a6e' }} />
                     <span><strong>Check-in:</strong> 14:00 - 20:00</span>
                   </p>
                   <p className="flex items-center gap-2">
-                    <Clock size={18} style={{ color: '#ae9a64' }} />
+                    <Clock size={18} style={{ color: '#4d9a6e' }} />
                     <span><strong>Check-out:</strong> Before 10:00</span>
                   </p>
                   <p className="flex items-center gap-2">
-                    <Ban size={18} style={{ color: '#ae9a64' }} />
+                    <Ban size={18} style={{ color: '#4d9a6e' }} />
                     <span><strong>Smoking:</strong> No smoking inside</span>
                   </p>
                 </div>
                 <div className="space-y-3">
                   <p className="flex items-center gap-2">
-                    <PartyPopper size={18} style={{ color: '#ae9a64' }} />
+                    <PartyPopper size={18} style={{ color: '#4d9a6e' }} />
                     <span><strong>Parties:</strong> Not allowed</span>
                   </p>
                   <p className="flex items-center gap-2">
-                    <Dog size={18} style={{ color: '#ae9a64' }} />
+                    <Dog size={18} style={{ color: '#4d9a6e' }} />
                     <span><strong>Pets:</strong> Not allowed</span>
                   </p>
                   <p className="flex items-center gap-2">
-                    <Baby size={18} style={{ color: '#ae9a64' }} />
+                    <Baby size={18} style={{ color: '#4d9a6e' }} />
                     <span><strong>Children:</strong> Welcome</span>
                   </p>
                 </div>
@@ -201,7 +201,7 @@ export default function PropertyPage() {
 
             {/* Location Details */}
             <div className="bg-white rounded shadow-sm p-8">
-              <h2 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
+              <h2 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
                 Location & Neighborhood
               </h2>
               
@@ -214,46 +214,46 @@ export default function PropertyPage() {
               </div>
 
               {/* Distances */}
-              <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-4">
+              <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-4">
                 Walking Distances to Attractions
               </h3>
               <div className="grid md:grid-cols-2 gap-3 mb-6" style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }}>
-                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#ae9a64' }} /> Fortezza da Basso: <strong>500 m (6 min)</strong></p>
-                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#ae9a64' }} /> Basilica di Santa Maria Novella: <strong>800 m (10 min)</strong></p>
-                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#ae9a64' }} /> Cappelle Medicee: <strong>1.2 km (14 min)</strong></p>
-                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#ae9a64' }} /> Palazzo Strozzi: <strong>1.3 km (15 min)</strong></p>
-                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#ae9a64' }} /> Duomo: <strong>1.4 km (16 min)</strong></p>
-                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#ae9a64' }} /> Galleria dell'Accademia: <strong>1.4 km (17 min)</strong></p>
-                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#ae9a64' }} /> Ponte Vecchio: <strong>1.8 km (21 min)</strong></p>
-                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#ae9a64' }} /> Uffizi Gallery: <strong>1.9 km (22 min)</strong></p>
+                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#4d9a6e' }} /> Fortezza da Basso: <strong>500 m (6 min)</strong></p>
+                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#4d9a6e' }} /> Basilica di Santa Maria Novella: <strong>800 m (10 min)</strong></p>
+                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#4d9a6e' }} /> Cappelle Medicee: <strong>1.2 km (14 min)</strong></p>
+                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#4d9a6e' }} /> Palazzo Strozzi: <strong>1.3 km (15 min)</strong></p>
+                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#4d9a6e' }} /> Duomo: <strong>1.4 km (16 min)</strong></p>
+                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#4d9a6e' }} /> Galleria dell'Accademia: <strong>1.4 km (17 min)</strong></p>
+                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#4d9a6e' }} /> Ponte Vecchio: <strong>1.8 km (21 min)</strong></p>
+                <p className="flex items-center gap-2"><MapPin size={16} style={{ color: '#4d9a6e' }} /> Uffizi Gallery: <strong>1.9 km (22 min)</strong></p>
               </div>
 
               {/* Transportation */}
-              <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-4">
+              <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-4">
                 How to Get Here
               </h3>
               <div style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-lg leading-relaxed space-y-3">
                 <p className="flex items-center gap-2">
-                  <Train size={18} style={{ color: '#ae9a64' }} />
+                  <Train size={18} style={{ color: '#4d9a6e' }} />
                   <span><strong>From Florence Central Station (Santa Maria Novella):</strong> 5-minute walk</span>
                 </p>
                 <p className="flex items-center gap-2">
-                  <Plane size={18} style={{ color: '#ae9a64' }} />
+                  <Plane size={18} style={{ color: '#4d9a6e' }} />
                   <span><strong>From Florence Airport (Amerigo Vespucci):</strong> 20 minutes by car or taxi</span>
                 </p>
                 <p className="flex items-center gap-2">
-                  <Train size={18} style={{ color: '#ae9a64' }} />
+                  <Train size={18} style={{ color: '#4d9a6e' }} />
                   <span><strong>Public transport:</strong> Tramway stop nearby</span>
                 </p>
               </div>
 
               {/* Nearby Services */}
-              <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-4 mt-6">
+              <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-4 mt-6">
                 Nearby Supermarkets & Restaurants
               </h3>
               <div style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-lg leading-relaxed space-y-3">
                 <p className="flex items-start gap-2">
-                  <ShoppingCart size={18} style={{ color: '#ae9a64' }} className="mt-1" />
+                  <ShoppingCart size={18} style={{ color: '#4d9a6e' }} className="mt-1" />
                   <span>
                     <strong>Supermarkets:</strong><br />
                     • Sapori e Dintorni - Via Alamanni<br />
@@ -261,11 +261,11 @@ export default function PropertyPage() {
                   </span>
                 </p>
                 <p className="flex items-center gap-2">
-                  <UtensilsCrossed size={18} style={{ color: '#ae9a64' }} />
+                  <UtensilsCrossed size={18} style={{ color: '#4d9a6e' }} />
                   <span><strong>Food:</strong> Mercato Centrale (700m) - fresh local products + gourmet food court</span>
                 </p>
                 <p className="flex items-center gap-2">
-                  <UtensilsCrossed size={18} style={{ color: '#ae9a64' }} />
+                  <UtensilsCrossed size={18} style={{ color: '#4d9a6e' }} />
                   <span><strong>Dining:</strong> Many restaurants and pubs in the station area for all tastes and budgets</span>
                 </p>
               </div>
@@ -273,7 +273,7 @@ export default function PropertyPage() {
 
             {/* Map */}
             <div className="bg-white rounded shadow-sm p-8">
-              <h2 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
+              <h2 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
                 Map Location
               </h2>
               <div className="w-full h-96 rounded overflow-hidden">
@@ -297,7 +297,7 @@ export default function PropertyPage() {
                 <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-sm mb-2">
                   Starting from
                 </p>
-                <p style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal">
+                <p style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal">
                   Contact for rates
                 </p>
                 <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-sm opacity-75">
@@ -307,19 +307,19 @@ export default function PropertyPage() {
 
               <div className="space-y-4 mb-6" style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }}>
                 <div className="flex items-center gap-3">
-                  <Users size={20} style={{ color: '#ae9a64' }} />
+                  <Users size={20} style={{ color: '#4d9a6e' }} />
                   <span>Up to 3 guests</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Bed size={20} style={{ color: '#ae9a64' }} />
+                  <Bed size={20} style={{ color: '#4d9a6e' }} />
                   <span>1 bedroom + sofa bed</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Droplet size={20} style={{ color: '#ae9a64' }} />
+                  <Droplet size={20} style={{ color: '#4d9a6e' }} />
                   <span>1 bathroom</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Home size={20} style={{ color: '#ae9a64' }} />
+                  <Home size={20} style={{ color: '#4d9a6e' }} />
                   <span>55 m² apartment</span>
                 </div>
               </div>
@@ -330,7 +330,7 @@ export default function PropertyPage() {
                   href="https://www.homesinflorence.it/guido-monaco-florence"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ backgroundColor: '#ae9a64', fontFamily: 'Georgia, serif' }}
+                  style={{ backgroundColor: '#4d9a6e', fontFamily: 'Georgia, serif' }}
                   className="block w-full text-center text-white px-6 py-3 rounded text-base font-normal hover:opacity-90 transition"
                 >
                   Book on Homes in Florence
@@ -340,7 +340,7 @@ export default function PropertyPage() {
                   href="https://www.booking.com/Share-3c371d"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ borderColor: '#ae9a64', color: '#ae9a64', fontFamily: 'Georgia, serif' }}
+                  style={{ borderColor: '#4d9a6e', color: '#4d9a6e', fontFamily: 'Georgia, serif' }}
                   className="block w-full text-center border-2 px-6 py-3 rounded text-base font-normal hover:opacity-90 transition"
                 >
                   Book on Booking.com
@@ -352,17 +352,17 @@ export default function PropertyPage() {
                 href="https://www.instagram.com/guidomonacobnb"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ borderColor: '#ae9a64', color: '#ae9a64', fontFamily: 'Georgia, serif' }}
+                style={{ borderColor: '#4d9a6e', color: '#4d9a6e', fontFamily: 'Georgia, serif' }}
                 className="flex items-center justify-center gap-2 w-full border-2 px-6 py-3 rounded text-base font-normal hover:opacity-90 transition mb-6"
               >
                 <Instagram size={20} />
                 <span>@guidomonacobnb</span>
               </a>
 
-              <hr className="my-6" style={{ borderColor: '#ae9a64', opacity: 0.3 }} />
+              <hr className="my-6" style={{ borderColor: '#4d9a6e', opacity: 0.3 }} />
 
               <div className="space-y-3">
-                <p style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold">
+                <p style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold">
                   Why Book Guido Monaco?
                 </p>
                 <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-2 text-sm">
@@ -389,7 +389,7 @@ export default function PropertyPage() {
               href="https://www.instagram.com/guidomonacobnb" 
               target="_blank" 
               rel="noopener noreferrer" 
-              style={{ color: '#ae9a64' }}
+              style={{ color: '#4d9a6e' }}
               className="hover:opacity-75 inline-flex items-center gap-2"
             >
               <Instagram size={18} />

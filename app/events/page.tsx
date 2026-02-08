@@ -92,7 +92,7 @@ const events = [
 
 export default function EventsPage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#f8f8f8' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#e8f7ee' }}>
       <header 
         style={{ 
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1691319683514-7f0ec295151f?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
@@ -132,23 +132,23 @@ export default function EventsPage() {
           {events.map((event, idx) => (
             <div key={idx} className="bg-white rounded shadow-sm p-8">
               <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
-                <h2 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal">
+                <h2 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal">
                   {event.name}
                 </h2>
-                <span style={{ backgroundColor: '#ae9a64', fontFamily: 'Georgia, serif' }} className="px-4 py-2 rounded text-white text-sm">
+                <span style={{ backgroundColor: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="px-4 py-2 rounded text-white text-sm">
                   {event.month}
                 </span>
               </div>
 
               <div className="mb-4 space-y-2" style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }}>
                 <p className="text-base">
-                  <strong style={{ color: '#ae9a64' }}>Location:</strong> {event.location}
+                  <strong style={{ color: '#4d9a6e' }}>Location:</strong> {event.location}
                 </p>
                 <p className="text-base">
-                  <strong style={{ color: '#ae9a64' }}>Timing:</strong> {event.timing}
+                  <strong style={{ color: '#4d9a6e' }}>Timing:</strong> {event.timing}
                 </p>
                 <p className="text-base">
-                  <strong style={{ color: '#ae9a64' }}>Admission:</strong> {event.admission}
+                  <strong style={{ color: '#4d9a6e' }}>Admission:</strong> {event.admission}
                 </p>
               </div>
 
@@ -161,7 +161,7 @@ export default function EventsPage() {
 
         {/* CTA */}
         <div className="bg-white rounded shadow-sm p-8 mt-12">
-          <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-4">
+          <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-4">
             Experience Authentic Florence
           </h3>
           <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="mb-4 text-lg leading-relaxed">
@@ -172,7 +172,7 @@ export default function EventsPage() {
             href="https://www.homesinflorence.it/guido-monaco-florence"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ backgroundColor: '#ae9a64', fontFamily: 'Georgia, serif' }}
+            style={{ backgroundColor: '#4d9a6e', fontFamily: 'Georgia, serif' }}
             className="inline-block text-white px-8 py-3 rounded font-normal hover:opacity-90 transition"
           >
             Check Availability & Book
@@ -190,7 +190,7 @@ export default function EventsPage() {
               href="https://www.instagram.com/guidomonacobnb" 
               target="_blank" 
               rel="noopener noreferrer" 
-              style={{ color: '#ae9a64' }}
+              style={{ color: '#4d9a6e' }}
               className="hover:opacity-75"
             >
               Follow us on Instagram

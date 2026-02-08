@@ -23,7 +23,7 @@ export default function Home() {
   })
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#f8f8f8' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#e8f7ee' }}>
       <header 
         style={{ 
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1691319683514-7f0ec295151f?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
@@ -90,31 +90,31 @@ export default function Home() {
       <main className="container mx-auto px-4 py-12 max-w-5xl">
         {/* About Section */}
         <div className="bg-white rounded shadow-sm p-8 mb-12">
-          <h2 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal mb-6">
+          <h2 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal mb-6">
             Your Florence Apartment
           </h2>
           
           {/* Address & Key Info */}
-          <div className="mb-6 p-4 rounded" style={{ backgroundColor: '#f8f8f8' }}>
+          <div className="mb-6 p-4 rounded" style={{ backgroundColor: '#e8f7ee' }}>
             <div className="grid md:grid-cols-2 gap-4" style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }}>
               <div>
                 <p className="mb-2 flex items-center gap-2">
-                  <MapPin size={18} style={{ color: '#ae9a64' }} />
+                  <MapPin size={18} style={{ color: '#4d9a6e' }} />
                   <strong>Address:</strong>
                 </p>
                 <p className="ml-6">Via Guido Monaco<br />50144 Florence, Italy</p>
               </div>
               <div>
                 <p className="mb-2 flex items-center gap-2">
-                  <Star size={18} style={{ color: '#ae9a64' }} className="fill-current" />
+                  <Star size={18} style={{ color: '#4d9a6e' }} className="fill-current" />
                   <strong>Rating:</strong> 9.0/10 Wonderful (21 reviews)
                 </p>
                 <p className="mb-2 flex items-center gap-2">
-                  <Users size={18} style={{ color: '#ae9a64' }} />
+                  <Users size={18} style={{ color: '#4d9a6e' }} />
                   <strong>Capacity:</strong> Up to 3 guests
                 </p>
                 <p className="mb-2 flex items-center gap-2">
-                  <FileText size={18} style={{ color: '#ae9a64' }} />
+                  <FileText size={18} style={{ color: '#4d9a6e' }} />
                   <strong>License:</strong> IT048017C2C2WZ8T9D
                 </p>
               </div>
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="mt-6 flex flex-wrap gap-4">
             <Link
               href="/property"
-              style={{ backgroundColor: '#ae9a64', fontFamily: 'Georgia, serif' }}
+              style={{ backgroundColor: '#4d9a6e', fontFamily: 'Georgia, serif' }}
               className="inline-block text-white px-8 py-3 rounded font-normal hover:opacity-90 transition"
             >
               View Full Details & Map
@@ -141,7 +141,7 @@ export default function Home() {
               href="https://www.homesinflorence.it/guido-monaco-florence"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ borderColor: '#ae9a64', color: '#ae9a64', fontFamily: 'Georgia, serif' }}
+              style={{ borderColor: '#4d9a6e', color: '#4d9a6e', fontFamily: 'Georgia, serif' }}
               className="inline-block border-2 px-8 py-3 rounded font-normal hover:opacity-90 transition"
             >
               Check Availability & Book
@@ -151,7 +151,7 @@ export default function Home() {
 
         {/* Blog Posts */}
         <div className="bg-white rounded shadow-sm p-8">
-          <h2 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal mb-8">
+          <h2 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal mb-8">
             Florence Travel Guides
           </h2>
           
@@ -160,7 +160,7 @@ export default function Home() {
               <article key={post.slug} className="border-b pb-8 last:border-b-0">
                 <Link href={`/blog/${post.slug}`}>
                   <h3 
-                    style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }}
+                    style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }}
                     className="text-2xl font-normal hover:opacity-80 transition"
                   >
                     {post.title}
@@ -172,7 +172,7 @@ export default function Home() {
                 <div className="mt-4">
                   <Link 
                     href={`/blog/${post.slug}`}
-                    style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }}
+                    style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }}
                     className="hover:opacity-80 transition font-normal"
                   >
                     Read more →
@@ -185,7 +185,7 @@ export default function Home() {
 
         {/* Property Highlights */}
         <div className="bg-white rounded shadow-sm p-8 mt-12">
-          <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
+          <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
             Why Choose This Apartment
           </h3>
           <ul className="space-y-3" style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }}>
@@ -210,7 +210,7 @@ export default function Home() {
               href="https://www.instagram.com/guidomonacobnb" 
               target="_blank" 
               rel="noopener noreferrer" 
-              style={{ color: '#ae9a64' }}
+              style={{ color: '#4d9a6e' }}
               className="hover:opacity-75 inline-flex items-center gap-2"
             >
               <Instagram size={18} />

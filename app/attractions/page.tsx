@@ -195,7 +195,7 @@ const attractions = [
 
 export default function AttractionsPage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#f8f8f8' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#e8f7ee' }}>
       <header 
         style={{ 
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1691319683514-7f0ec295151f?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
@@ -233,7 +233,7 @@ export default function AttractionsPage() {
         {/* Attractions by Category */}
         {attractions.map((section, idx) => (
           <div key={idx} className="mb-12">
-            <h2 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal mb-6">
+            <h2 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal mb-6">
               {section.category}
             </h2>
             
@@ -241,11 +241,11 @@ export default function AttractionsPage() {
               {section.places.map((place, placeIdx) => (
                 <div key={placeIdx} className="bg-white rounded shadow-sm p-6">
                   <div className="flex flex-wrap items-start justify-between gap-4 mb-3">
-                    <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal">
+                    <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal">
                       {place.name}
                     </h3>
                     <div className="flex gap-4 text-sm">
-                      <span style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold">
+                      <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold">
                         📍 {place.distance}
                       </span>
                       <span style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }}>
@@ -260,7 +260,7 @@ export default function AttractionsPage() {
                   
                   <div className="grid md:grid-cols-2 gap-3 mb-3">
                     <div>
-                      <span style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">
+                      <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">
                         Hours:
                       </span>
                       <span style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-sm ml-2">
@@ -268,7 +268,7 @@ export default function AttractionsPage() {
                       </span>
                     </div>
                     <div>
-                      <span style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">
+                      <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">
                         Price:
                       </span>
                       <span style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-sm ml-2">
@@ -277,8 +277,8 @@ export default function AttractionsPage() {
                     </div>
                   </div>
                   
-                  <div style={{ backgroundColor: '#f8f8f8' }} className="p-3 rounded">
-                    <span style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">
+                  <div style={{ backgroundColor: '#e8f7ee' }} className="p-3 rounded">
+                    <span style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm">
                       💡 Insider Tip:
                     </span>
                     <span style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-sm ml-2">
@@ -293,7 +293,7 @@ export default function AttractionsPage() {
 
         {/* CTA */}
         <div className="bg-white rounded shadow-sm p-8 mt-12">
-          <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-4">
+          <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-4">
             Perfect Base for Florence Exploration
           </h3>
           <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="mb-4 text-lg leading-relaxed">
@@ -304,7 +304,7 @@ export default function AttractionsPage() {
             href="https://www.homesinflorence.it/guido-monaco-florence"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ backgroundColor: '#ae9a64', fontFamily: 'Georgia, serif' }}
+            style={{ backgroundColor: '#4d9a6e', fontFamily: 'Georgia, serif' }}
             className="inline-block text-white px-8 py-3 rounded font-normal hover:opacity-90 transition"
           >
             Check Availability & Book
@@ -322,7 +322,7 @@ export default function AttractionsPage() {
               href="https://www.instagram.com/guidomonacobnb" 
               target="_blank" 
               rel="noopener noreferrer" 
-              style={{ color: '#ae9a64' }}
+              style={{ color: '#4d9a6e' }}
               className="hover:opacity-75"
             >
               Follow us on Instagram

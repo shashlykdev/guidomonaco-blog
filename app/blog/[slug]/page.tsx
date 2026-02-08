@@ -43,7 +43,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
   })
   
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#f8f8f8' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#e8f7ee' }}>
       <head>
         <script
           type="application/ld+json"
@@ -73,7 +73,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
         </div>
 
         <div className="bg-white rounded shadow-sm p-8 mt-8">
-          <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-4">
+          <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-4">
             Book Your Florence Stay
           </h3>
           <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="mb-4 text-lg">
@@ -84,7 +84,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             href="https://www.homesinflorence.it/guido-monaco-florence"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ backgroundColor: '#ae9a64', fontFamily: 'Georgia, serif' }}
+            style={{ backgroundColor: '#4d9a6e', fontFamily: 'Georgia, serif' }}
             className="inline-block text-white px-8 py-3 rounded font-normal hover:opacity-90 transition"
           >
             Check Availability & Rates
@@ -102,7 +102,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
               href="https://www.instagram.com/guidomonacobnb" 
               target="_blank" 
               rel="noopener noreferrer" 
-              style={{ color: '#ae9a64' }}
+              style={{ color: '#4d9a6e' }}
               className="hover:opacity-75"
             >
               Follow us on Instagram

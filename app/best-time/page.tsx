@@ -124,7 +124,7 @@ const seasons = [
 
 export default function BestTimePage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#f8f8f8' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#e8f7ee' }}>
       <header 
         style={{ 
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1691319683514-7f0ec295151f?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
@@ -154,8 +154,8 @@ export default function BestTimePage() {
             priorities: weather, crowds, events, prices, and the type of experience you seek. This guide helps you 
             choose the perfect season for your Florentine adventure.
           </p>
-          <div className="mt-6 p-4 rounded" style={{ backgroundColor: '#f8f8f8' }}>
-            <p style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold mb-2">Quick Answer:</p>
+          <div className="mt-6 p-4 rounded" style={{ backgroundColor: '#e8f7ee' }}>
+            <p style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold mb-2">Quick Answer:</p>
             <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }}>
               <strong>April-May and September-October</strong> offer the best combination of pleasant weather, 
               manageable crowds, and cultural events. For lowest prices and smallest crowds, choose 
@@ -168,14 +168,14 @@ export default function BestTimePage() {
         <div className="space-y-8">
           {seasons.map((season, idx) => (
             <div key={idx} className="bg-white rounded shadow-sm p-8">
-              <h2 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal mb-6">
+              <h2 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-3xl font-normal mb-6">
                 {season.season}
               </h2>
 
               {/* Quick Stats */}
-              <div className="grid md:grid-cols-3 gap-4 mb-6 p-4 rounded" style={{ backgroundColor: '#f8f8f8' }}>
+              <div className="grid md:grid-cols-3 gap-4 mb-6 p-4 rounded" style={{ backgroundColor: '#e8f7ee' }}>
                 <div>
-                  <p style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-1">
+                  <p style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-1">
                     Weather
                   </p>
                   <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-base">
@@ -183,7 +183,7 @@ export default function BestTimePage() {
                   </p>
                 </div>
                 <div>
-                  <p style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-1">
+                  <p style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-1">
                     Crowds
                   </p>
                   <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-base">
@@ -191,7 +191,7 @@ export default function BestTimePage() {
                   </p>
                 </div>
                 <div>
-                  <p style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-1">
+                  <p style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-1">
                     Best For
                   </p>
                   <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-base">
@@ -207,7 +207,7 @@ export default function BestTimePage() {
 
               {/* Events */}
               <div className="mb-6">
-                <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-3">
+                <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-3">
                   Major Events
                 </h3>
                 <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-2">
@@ -220,7 +220,7 @@ export default function BestTimePage() {
               {/* Pros & Cons */}
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-3">
+                  <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-3">
                     Pros
                   </h3>
                   <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-2">
@@ -230,7 +230,7 @@ export default function BestTimePage() {
                   </ul>
                 </div>
                 <div>
-                  <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-3">
+                  <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-xl font-normal mb-3">
                     Cons
                   </h3>
                   <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-2">
@@ -242,8 +242,8 @@ export default function BestTimePage() {
               </div>
 
               {/* Tips */}
-              <div className="p-4 rounded" style={{ backgroundColor: '#f8f8f8' }}>
-                <p style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-2">
+              <div className="p-4 rounded" style={{ backgroundColor: '#e8f7ee' }}>
+                <p style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="font-semibold text-sm mb-2">
                   💡 Insider Tips
                 </p>
                 <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="text-base">
@@ -256,7 +256,7 @@ export default function BestTimePage() {
 
         {/* Additional Tips */}
         <div className="bg-white rounded shadow-sm p-8 mt-12">
-          <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
+          <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-6">
             General Tips for Any Season
           </h3>
           <ul style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="space-y-3 text-base">
@@ -271,7 +271,7 @@ export default function BestTimePage() {
 
         {/* CTA */}
         <div className="bg-white rounded shadow-sm p-8 mt-8">
-          <h3 style={{ color: '#ae9a64', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-4">
+          <h3 style={{ color: '#4d9a6e', fontFamily: 'Georgia, serif' }} className="text-2xl font-normal mb-4">
             Ready to Experience Florence?
           </h3>
           <p style={{ color: '#1d1d1b', fontFamily: 'Georgia, serif' }} className="mb-4 text-lg leading-relaxed">
@@ -282,7 +282,7 @@ export default function BestTimePage() {
             href="https://www.homesinflorence.it/guido-monaco-florence"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ backgroundColor: '#ae9a64', fontFamily: 'Georgia, serif' }}
+            style={{ backgroundColor: '#4d9a6e', fontFamily: 'Georgia, serif' }}
             className="inline-block text-white px-8 py-3 rounded font-normal hover:opacity-90 transition"
           >
             Check Availability & Book
@@ -300,7 +300,7 @@ export default function BestTimePage() {
               href="https://www.instagram.com/guidomonacobnb" 
               target="_blank" 
               rel="noopener noreferrer" 
-              style={{ color: '#ae9a64' }}
+              style={{ color: '#4d9a6e' }}
               className="hover:opacity-75"
             >
               Follow us on Instagram
