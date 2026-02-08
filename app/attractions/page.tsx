@@ -196,7 +196,14 @@ const attractions = [
 export default function AttractionsPage() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#f8f8f8' }}>
-      <header style={{ backgroundColor: '#ae9a64' }} className="text-white py-16">
+      <header 
+        style={{ 
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1700952342495-6adb2abdedd2?q=80&w=1834&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }} 
+        className="text-white py-16"
+      >
         <div className="container mx-auto px-4 max-w-5xl">
           <Link href="/" style={{ fontFamily: 'Georgia, serif' }} className="text-white hover:opacity-80 transition block mb-4">
             ← Back to Home
