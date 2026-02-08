@@ -31,6 +31,15 @@ export default function Home() {
           <p className="text-xl mt-3 text-white opacity-95" style={{ fontFamily: 'Georgia, serif' }}>
             Welcome to Your Florence Home
           </p>
+          <nav className="mt-6 flex gap-6">
+            <Link 
+              href="/attractions"
+              className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1"
+              style={{ fontFamily: 'Georgia, serif' }}
+            >
+              Florence Attractions
+            </Link>
+          </nav>
         </div>
       </header>
 
