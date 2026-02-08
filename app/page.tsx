@@ -33,10 +33,17 @@ export default function Home() {
         className="text-white py-16"
       >
         <div className="container mx-auto px-4 max-w-5xl">
-          <h1 className="text-5xl font-normal text-white" style={{ fontFamily: 'Georgia, serif' }}>
-            Guido Monaco
-          </h1>
-          <p className="text-xl mt-3 text-white opacity-95" style={{ fontFamily: 'Georgia, serif' }}>
+          <div className="mb-6">
+            <Image 
+              src="/logo.png" 
+              alt="Guido Monaco B&B" 
+              width={300} 
+              height={200} 
+              className="mb-4"
+              priority
+            />
+          </div>
+          <p className="text-xl text-white opacity-95" style={{ fontFamily: 'Georgia, serif' }}>
             Welcome to Your Florence Home
           </p>
           <nav className="mt-6 flex flex-wrap gap-6">

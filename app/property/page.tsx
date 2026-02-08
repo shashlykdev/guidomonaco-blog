@@ -21,9 +21,18 @@ export default function PropertyPage() {
         className="text-white py-6"
       >
         <div className="container mx-auto px-4 max-w-6xl">
-          <Link href="/" style={{ fontFamily: 'Georgia, serif' }} className="text-white hover:opacity-80 transition">
+          <Link href="/" style={{ fontFamily: 'Georgia, serif' }} className="text-white hover:opacity-80 transition block mb-4">
             ← Back to Home
           </Link>
+          <div className="mb-4">
+            <Image 
+              src="/logo.png" 
+              alt="Guido Monaco B&B" 
+              width={250} 
+              height={167} 
+              priority
+            />
+          </div>
         </div>
       </header>
 

@@ -261,7 +261,16 @@ export default function AttractionsPage() {
           <Link href="/" style={{ fontFamily: 'Georgia, serif' }} className="text-white hover:opacity-80 transition block mb-4">
             ← Back to Home
           </Link>
-          <h1 className="text-5xl font-normal text-white" style={{ fontFamily: 'Georgia, serif' }}>
+          <div className="mb-4">
+            <Image 
+              src="/logo.png" 
+              alt="Guido Monaco B&B" 
+              width={250} 
+              height={167} 
+              priority
+            />
+          </div>
+          <h1 className="text-4xl font-normal text-white" style={{ fontFamily: 'Georgia, serif' }}>
             Florence Attractions
           </h1>
           <p className="text-xl mt-3 text-white opacity-95" style={{ fontFamily: 'Georgia, serif' }}>
