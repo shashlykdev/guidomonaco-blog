@@ -39,7 +39,7 @@ export default function Home() {
           <p className="text-xl mt-3 text-white opacity-95" style={{ fontFamily: 'Georgia, serif' }}>
             Welcome to Your Florence Home
           </p>
-          <nav className="mt-6 flex gap-6">
+          <nav className="mt-6 flex flex-wrap gap-6">
             <Link 
               href="/property"
               className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1"
@@ -52,7 +52,21 @@ export default function Home() {
               className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1"
               style={{ fontFamily: 'Georgia, serif' }}
             >
-              Florence Attractions
+              Attractions
+            </Link>
+            <Link 
+              href="/events"
+              className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1"
+              style={{ fontFamily: 'Georgia, serif' }}
+            >
+              Events
+            </Link>
+            <Link 
+              href="/best-time"
+              className="text-white hover:opacity-80 transition border-b-2 border-transparent hover:border-white pb-1"
+              style={{ fontFamily: 'Georgia, serif' }}
+            >
+              Best Time to Visit
             </Link>
           </nav>
         </div>
