@@ -40,13 +40,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="lFyN_uXWzydo2859Mft1cwDhOz8XW484JTfjr65yrw8" />
-        {/* Usercentrics Consent Management Platform */}
-        <script
-          id="usercentrics-cmp"
-          src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
-          data-settings-id="cg-D9sMk9tlnGQ"
-          async
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -55,6 +48,13 @@ export default function RootLayout({
         />
       </head>
       <body>
+        {/* Usercentrics Consent Management Platform V3 */}
+        <Script
+          id="usercentrics-cmp"
+          src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
+          data-settings-id="cg-D9sMk9tlnGQ"
+          strategy="beforeInteractive"
+        />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-16HVWQQ3F7"
