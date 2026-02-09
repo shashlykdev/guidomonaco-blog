@@ -18,15 +18,21 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
-# Block AI scrapers (optional - remove if you want AI to use your content)
+# AI Search Engines - ALLOW for maximum visibility
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
 
 User-agent: CCBot
-Disallow: /
+Allow: /
 
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
