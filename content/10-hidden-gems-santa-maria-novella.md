@@ -315,6 +315,50 @@ Florence is cobblestones and hills. Stylish sneakers or broken-in leather boots 
 
 ---
 
+## Frequently Asked Questions
+
+**Q: How far are these hidden gems from Santa Maria Novella station?**
+
+A: All 10 spots are within 5-20 minutes walking distance. The closest is Officina Profumo (5 min), and the farthest is Parco delle Cascine (20 min). You can easily visit 5-6 in a single day.
+
+**Q: Do I need to speak Italian to visit these places?**
+
+A: No. Most have English-speaking staff. Basic Italian phrases help (buongiorno, grazie, per favore), but you'll be fine with English.
+
+**Q: Which hidden gems require reservations?**
+
+A: Only Officina della Bistecca requires advance reservations (essential for dinner). La Ménagère is helpful for dinner but not mandatory. Everything else is walk-in friendly.
+
+**Q: Are these places open on Sundays?**
+
+A: Most yes, with exceptions: Officina Profumo (closed Sundays), some wine bars have reduced Sunday hours. Churches and gardens are typically open. Call ahead if visiting on Sunday.
+
+**Q: How much should I budget for these hidden gems?**
+
+A: Budget €50-80 per person for a full day: €15-20 for lunch (Mercato Centrale), €10-15 for aperitivo, €30-40 for dinner at Officina della Bistecca. Browsing gardens and churches is free. Pharmacy products €8-200.
+
+**Q: Can I visit all 10 in one day?**
+
+A: Possible but rushed. Better to do 5-6 at a relaxed pace: morning church + pharmacy, lunch at market, afternoon garden walk, aperitivo, dinner. Save the rest for another day.
+
+**Q: Are these places kid-friendly?**
+
+A: Yes. Giardino Corsini (gardens), Mercato Centrale (food options), and Parco delle Cascine (park with space to run) are perfect for families. Wine bars and Officina della Bistecca are more adult-oriented.
+
+**Q: What's the best time of day to visit these hidden gems?**
+
+A: Mornings (8:00-10:00) for churches and gardens before crowds. Midday (12:00-14:00) for lunch at Mercato Centrale. Aperitivo hour (18:00-20:00) for wine bars. Dinner at 20:30 or later like locals.
+
+**Q: Do I need a car to reach these places?**
+
+A: No. Everything is walkable from Santa Maria Novella station. Florence's historic center is compact and pedestrian-friendly. Walking is faster and more enjoyable than dealing with traffic and parking.
+
+**Q: Are these actually "hidden" or just less touristy?**
+
+A: A mix. Officina Profumo and Mercato Centrale are known but underused (tourists go downstairs, skip upstairs). Giardino Corsini, Il Santino, and Procacci are genuinely off most tourists' radar. They're "hidden" because 90% of visitors never venture beyond the Duomo-Uffizi corridor.
+
+---
+
 ## Final Thoughts
 
 These hidden gems aren't secret because they're hard to find—they're secret because most visitors never venture beyond the Duomo-Uffizi-Ponte Vecchio triangle. Staying near Santa Maria Novella station gives you the perfect base to explore like a local.

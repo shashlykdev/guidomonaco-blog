@@ -266,31 +266,63 @@ No taxi needed, perfect rolling luggage walk.
 
 **From Bologna** (40 min, €8-20): Frequent service, great for day trips.
 
-## Frequently Asked Questions
+## Frequently Asked Questions About Staying Near Florence Train Station
 
-### Is it safe?
+### Is the area near Santa Maria Novella station safe?
 
 YES. Via Guido Monaco and the station area are very safe. Well-lit streets, lots of foot traffic, regular police presence. Florence generally is one of Italy's safest cities. Standard travel precautions (watch your phone/wallet in crowds) apply, but you'll feel comfortable walking here at night.
 
-### Is it too touristy?
+### Is staying near Florence train station too touristy?
 
 No - that's the beauty of this location. You're in a real neighborhood where Florentines actually live. Yes, you'll see tourists near the station, but walk two blocks in any direction and it's local life. Neighborhood cafes, residents walking dogs, kids going to school.
 
-### Can I really walk to everything?
+### How far is the train station from Florence's main attractions?
+
+From Santa Maria Novella station: Duomo (12 min walk / 1.0 km), Uffizi Gallery (18 min / 1.4 km), Ponte Vecchio (15 min / 1.2 km), Accademia (Michelangelo's David) (15 min / 1.1 km). Everything in the historic center is within 20 minutes on foot.
+
+### Can I really walk to everything from near the train station?
 
 For major sights within the historic center: YES. Duomo, Uffizi, Ponte Vecchio, major museums - all 10-20 minute walks. For things like Piazzale Michelangelo (the hilltop viewpoint) or Boboli Gardens, you might want a bus or taxi. But 90% of what you'll want to see is totally walkable.
 
-### Are there good supermarkets nearby?
+### Are there good supermarkets near Florence train station?
 
-YES. Multiple options within 5-7 minutes walk. You can easily stock your apartment kitchen with breakfast items, snacks, wine, whatever you need. Much better than staying in the tourist center where your only option is overpriced mini-markets.
+YES. Multiple options within 5-7 minutes walk: Sapori & Dintorni (5 min), Carrefour Express (7 min, open until 21:00), and Conad City locations. You can easily stock your apartment kitchen with breakfast items, snacks, wine, whatever you need.
 
-### What about nightlife?
+### Where should I eat near Santa Maria Novella station?
+
+Best options: Mercato Centrale (upstairs food hall, €10-20), Trattoria Mario (authentic Florentine, 10 min walk), Il Latini (family-style Tuscan, 12 min), Da Nerbone (inside the market, €7-12). All serve authentic Florentine food without tourist-trap prices.
+
+### How do I get from Florence airport to near the train station?
+
+Three options: Taxi (20 min, €20-25 flat rate), Tramway T2 (25 min, €1.50, stops at station), or Volainbus shuttle (20-30 min, €6, drops at station). If staying near Via Guido Monaco, all three options get you within 5 minutes walk.
+
+### What about nightlife near Florence train station?
 
 The station area is quieter at night than the centro storico - which many travelers prefer after exhausting days of sightseeing. That said, you're 10-15 minutes walk from Santa Maria Novella's bars and restaurants, and 15-20 minutes from Oltrarno's trendy spots. You can go out, then come home to peace and quiet.
 
-### Is August too hot without AC near the station?
+### Is air conditioning necessary in Florence?
 
-The station area is no hotter than anywhere else in Florence - the whole city bakes in August! But THIS is exactly why air conditioning is non-negotiable. With AC, August is totally manageable. Without it, any Florence apartment is miserable.
+YES, especially May-September. Florence gets hot (35°C+ in summer). Without AC, you won't sleep. Via Guido Monaco apartments with AC are non-negotiable for summer visits. The station area is no cooler than anywhere else in Florence.
+
+### Can I do day trips from Florence easily if staying near the station?
+
+ABSOLUTELY. That's one of the biggest advantages. Trains to: Pisa (1 hour), Siena (1.5 hours), Cinque Terre (2-3 hours), Bologna (40 min), Rome (1.5 hours high-speed). You're literally steps from the departure platform. Drop bags, catch your train, explore, return, 5-minute walk home.
+
+### Is Via Guido Monaco a good street for apartments?
+
+YES. Via Guido Monaco is a residential street 5 minutes from the station, lined with apartment buildings housing locals. Quiet at night, safe, well-maintained. It's the perfect balance between convenience (station proximity) and residential comfort (not a busy tourist corridor).
+
+### Do I need to rent a car in Florence?
+
+NO. Florence's historic center is compact and mostly pedestrian-only. Parking is expensive and stressful. If staying near the station, you can walk to everything or take cheap buses/trams. Only rent a car if doing extensive Tuscany countryside day trips.
+
+### What's the check-in process for apartments near the station?
+
+Most professionally managed apartments (like those on Via Guido Monaco) offer flexible check-in times with key lockboxes or personal meet-and-greet. Much easier than hotel check-ins with strict time windows. Confirm details with your host when booking.
+
+### Are groceries expensive near Florence train station?
+
+No more than anywhere else in Florence. Regular Italian supermarkets (Carrefour, Conad) have standard prices - cheaper than tourist mini-markets in the historic center. Budget €40-60 for a week's worth of breakfast items, snacks, and drinks for two people.
 
 ## Final Recommendation: Book Via Guido Monaco
 

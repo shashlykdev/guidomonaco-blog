@@ -3,8 +3,27 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
-import { blogPostSchema } from '@/lib/schema'
+import { blogPostSchema, faqSchema } from '@/lib/schema'
 import Link from 'next/link'
+
+// Extract FAQ from markdown content
+function extractFAQs(content: string): Array<{ question: string; answer: string }> {
+  const faqs: Array<{ question: string; answer: string }> = []
+  
+  // Match FAQ sections with ### or **Q:** patterns
+  const faqPattern = /(?:###\s+|^\*\*Q:\s*)([^\n]+)\n\n(?:A:\s*)?([^\n#]+(?:\n(?!###|\*\*Q:)[^\n]+)*)/gm
+  
+  let match
+  while ((match = faqPattern.exec(content)) !== null) {
+    const question = match[1].trim().replace(/\*\*/g, '').replace(/^Q:\s*/, '')
+    const answer = match[2].trim().replace(/^A:\s*/, '')
+    if (question && answer) {
+      faqs.push({ question, answer })
+    }
+  }
+  
+  return faqs
+}
 
 export async function generateStaticParams() {
   const contentDir = path.join(process.cwd(), 'content')
@@ -42,6 +61,13 @@ export default async function BlogPost({ params }: { params: { slug: string } })
     url: `https://florence-blog.vercel.app/blog/${params.slug}`,
   })
   
+  // Extract FAQs from content for AI search optimization
+  const filePath = path.join(process.cwd(), 'content', `${params.slug}.md`)
+  const fileContent = fs.readFileSync(filePath, 'utf8')
+  const { content } = matter(fileContent)
+  const faqs = extractFAQs(content)
+  const faqSchemaData = faqs.length > 0 ? faqSchema(faqs) : null
+  
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#F8F8F8' }}>
       <head>
@@ -51,6 +77,14 @@ export default async function BlogPost({ params }: { params: { slug: string } })
             __html: JSON.stringify(schema),
           }}
         />
+        {faqSchemaData && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(faqSchemaData),
+            }}
+          />
+        )}
       </head>
       <header 
         style={{ 
