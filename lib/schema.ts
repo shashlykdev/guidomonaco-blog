@@ -24,13 +24,6 @@ export const accommodationSchema = {
   },
   telephone: '+39-xxx-xxx-xxxx',
   email: 'info@homesinflorence.it',
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '9.0',
-    reviewCount: '21',
-    bestRating: '10',
-    worstRating: '1',
-  },
   amenityFeature: [
     {
       '@type': 'LocationFeatureSpecification',
