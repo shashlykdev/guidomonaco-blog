@@ -52,7 +52,7 @@ export default function RootLayout({
         <Script
           id="usercentrics-cmp"
           src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
-          data-settings-id="cg-D9sMk9tlnGQ"
+          data-settings-id="cg-D9sMk9tln4G"
           strategy="beforeInteractive"
         />
         {/* Google Analytics */}
