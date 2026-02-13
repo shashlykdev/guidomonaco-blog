@@ -69,23 +69,22 @@ export default async function BlogPost({ params }: { params: { slug: string } })
   const faqSchemaData = faqs.length > 0 ? faqSchema(faqs) : null
   
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#F8F8F8' }}>
-      <head>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
+      />
+      {faqSchemaData && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schema),
+            __html: JSON.stringify(faqSchemaData),
           }}
         />
-        {faqSchemaData && (
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(faqSchemaData),
-            }}
-          />
-        )}
-      </head>
+      )}
+      <div className="min-h-screen" style={{ backgroundColor: '#F8F8F8' }}>
       <header 
         style={{ 
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1691319683514-7f0ec295151f?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
@@ -144,6 +143,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           </p>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   )
 }
